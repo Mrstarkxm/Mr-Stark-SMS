@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "functions": {
+    "api/index.js": { "includeFiles": ["public/**", "lib/**", "data/db.json"] },
+    "api/cron-sync.js": { "includeFiles": ["lib/**", "data/db.json"] }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index" }
+  ]
+}
